@@ -1,0 +1,8 @@
+create database Kattle;
+
+create table Kattle_map(
+    Map_id int primary key auto_increment,
+    Map_Name varchar(64) not null,
+    Map mediumtext not null
+);
+create index idx_Map_name on Kattle_map(Map_Name);
